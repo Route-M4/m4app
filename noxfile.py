@@ -31,6 +31,5 @@ def tests(session: nox.Session) -> None:
     session.install("-r", "tests/requirements.txt", ".")
     session.run(
         "pytest",
-        "--cov=src",
         *session.posargs,
     )
