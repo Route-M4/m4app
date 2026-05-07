@@ -12,6 +12,8 @@ license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = [
+    "aiogram>=3.27.0",
+    "aiogram-dialog>=2.6.0",
     "click>=8.3.3",
     "dishka>=1.10.1",
     "dynaconf>=3.2.13",

@@ -1,7 +1,9 @@
+import asyncio
 import logging
 
 import click
 
+from ..bot import run as _run_bot
 from ..core import logging as logger
 from ..core.settings import settings
 
@@ -25,4 +27,4 @@ def run() -> None:
 @run.command()
 def bot() -> None:
     """Run bot application."""
-    click.echo("Running bot application...")
+    asyncio.run(_run_bot())
