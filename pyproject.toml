@@ -1,0 +1,29 @@
+[project]
+name = "m4app"
+dynamic = [ "version" ]
+authors = [
+    { name = "Katulos", email = "123748719+Katulos@users.noreply.github.com" }
+]
+maintainers = [
+    { name = "Katulos", email = "123748719+Katulos@users.noreply.github.com"}
+]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.3.3",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "m4app.__version__"}
+
+[project.scripts]
+m4app = "m4app.cli.commands:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

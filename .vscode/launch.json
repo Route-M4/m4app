@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: app",
+            "type": "python",
+            "request": "launch",
+            "noDebug": true,
+            "python": "${command:python.interpreterPath}",
+            "console": "integratedTerminal",
+            "module": "app",
+            "args": ["start"],
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "name": "Python: Debug app",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "stopOnPoints": true,
+            "python": "${command:python.interpreterPath}",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "module": "app",
+            "args": ["start"],
+            "cwd": "${workspaceRoot}",
+            "debugOptions": ["RedirectOutput"]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "stopOnPoints": true,
+            "python": "${command:python.interpreterPath}",
+            "program": "${file}",
+            "console": "internalConsole"
+        }
+    ]
+}
