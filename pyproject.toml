@@ -13,6 +13,10 @@ license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = [
     "click>=8.3.3",
+    "dynaconf>=3.2.13",
+    "orjson>=3.11.9",
+    "rich>=15.0.0",
+    "structlog>=25.5.0",
 ]
 
 [tool.setuptools.dynamic]

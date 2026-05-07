@@ -1,2 +1,10 @@
 click==8.3.3
 colorama==0.4.6 ; sys_platform == 'win32'
+dynaconf==3.2.13
+markdown-it-py==4.2.0
+mdurl==0.1.2
+orjson==3.11.9
+pygments==2.20.0
+rich==15.0.0
+structlog==25.5.0
+typing-extensions==4.15.0 ; python_full_version < '3.11'
