@@ -38,7 +38,7 @@ clean-test:
 # i18n
 .PHONY: extract
 extract: ## Extract i18n
-	@ftl_extract --default-ftl-file main.ftl \
+	@ftl extract --default-ftl-file main.ftl \
 		-k i18n -k I18N -k i18n -k LF -k LazyProxy -k L -k I18NFormat \
 		-l en -l ru \
 		./src $(locales)

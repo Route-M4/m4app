@@ -1,0 +1,9 @@
+accept-button = ✅Принять
+back-button = ↩️Назад
+cancel-button = 🚫Отмена
+close-button = ❌Закрыть
+confirm-button = ✅Подтвердить
+complete-button = ✅Выполнить
+menu-button = ☰Меню
+no-button = ❌Нет
+yes-button = ✅Да
