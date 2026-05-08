@@ -17,6 +17,8 @@ from dishka import (
 )
 from dishka.integrations.aiogram import setup_dishka
 
+from ....bot.handlers import setup as setup_handlers
+from ....bot.middlewares import setup as setup_middlewares
 from ....bot.session import SmartSession
 from ....core.settings import settings
 
@@ -68,6 +70,8 @@ class DispatcherProvider(Provider):
             events_isolation=event_isolation,
         )
         setup_dishka(container=container, router=dp)
+        bg_manager_factory = setup_handlers(dp, message_manager)
+        setup_middlewares(dp, bg_manager_factory)
         return dp
 
     @provide

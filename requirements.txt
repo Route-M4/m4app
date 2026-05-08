@@ -3,6 +3,7 @@ aiogram==3.27.0
 aiogram-dialog==2.6.0
 aiohappyeyeballs==2.6.1
 aiohttp==3.13.5
+aiojobs==1.4.0
 aiosignal==1.4.0
 annotated-types==0.7.0
 async-timeout==5.0.1 ; python_full_version < '3.11'

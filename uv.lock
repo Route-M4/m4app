@@ -172,6 +172,18 @@ wheels = [
 ]
 
 [[package]]
+name = "aiojobs"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "async-timeout", marker = "python_full_version < '3.11'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/03/54/751969398e2039b4dc458fa153dc066a0f7337a5b480d58944f59b7b38ae/aiojobs-1.4.0.tar.gz", hash = "sha256:463665c75d1fcc46c78d44375c1034abf5e3f087894b0fc5ec4dd16ef90fdc98", size = 139598, upload-time = "2025-04-05T00:39:07.771Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ce/89/5a30b3c041712a8b2dadb5ccef2bae12a874469650c61c018705039699cd/aiojobs-1.4.0-py3-none-any.whl", hash = "sha256:e95eb0d10d1f6095aefb04d228d2b4b3747514503f26540de722c2228a8500ca", size = 9455, upload-time = "2025-04-05T00:39:06.279Z" },
+]
+
+[[package]]
 name = "aiosignal"
 version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -431,6 +443,7 @@ source = { editable = "." }
 dependencies = [
     { name = "aiogram" },
     { name = "aiogram-dialog" },
+    { name = "aiojobs" },
     { name = "click" },
     { name = "dishka" },
     { name = "dynaconf" },
@@ -443,6 +456,7 @@ dependencies = [
 requires-dist = [
     { name = "aiogram", specifier = ">=3.27.0" },
     { name = "aiogram-dialog", specifier = ">=2.6.0" },
+    { name = "aiojobs", specifier = ">=1.4.0" },
     { name = "click", specifier = ">=8.3.3" },
     { name = "dishka", specifier = ">=1.10.1" },
     { name = "dynaconf", specifier = ">=3.2.13" },
